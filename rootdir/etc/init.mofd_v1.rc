@@ -283,6 +283,12 @@ on property:service.mmgr.smp=1
 on property:service.mmgr.smp=0
     write /proc/irq/36/smp_affinity 1
 
+service mdservice /system/bin/mdservice
+    class core
+    user system
+    group graphics
+    writepid /dev/cpuset/foreground/tasks
+
 service_redefine drm /system/bin/drmserver
     class main
     user drm

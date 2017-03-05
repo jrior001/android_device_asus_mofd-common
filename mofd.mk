@@ -71,6 +71,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #PRODUCT_PACKAGES += \
 #    pvr_drv_video
 
+PRODUCT_PACKAGES += \
+    mdservice
+
 PRODUCT_COPY_FILES += \
     device/asus/mofd-common/powervr.ini:system/etc/powervr.ini
 

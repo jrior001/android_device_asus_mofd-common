@@ -9,6 +9,7 @@
 /system/bin/sl_si_service               u:object_r:asus_config_exec:s0
 /config(/.*)?                           u:object_r:asus_config_file:s0
 /local_cfg                              u:object_r:asus_config_file:s0
+/system/bin/mdservice                   u:object_r:mdservice_exec:s0
 
 # Asus logging that we are going to throttle
 /data/sensorhubd\.log                    u:object_r:log_file_we_dont_want_to_allow:s0
