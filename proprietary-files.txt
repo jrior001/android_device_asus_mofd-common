@@ -367,7 +367,6 @@ lib/libsephdcp2x.so
 
 # Stock media stack
 bin/msvdx_bin
-bin/surfaceflinger
 bin/topaz_bin
 lib/hw/hwcomposer.moorefield.so
 lib/libOMXVideoDecoderH263.so
