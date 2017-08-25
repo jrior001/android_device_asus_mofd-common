@@ -202,6 +202,15 @@ LOCAL_SRC_FILES := proprietary/bin/\$(LOCAL_MODULE)
 LOCAL_CERTIFICATE := platform
 include \$(BUILD_PREBUILT)
 
+include \$(CLEAR_VARS)
+LOCAL_MODULE := libmultidisplay
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_SRC_FILES := proprietary/lib/\$(LOCAL_MODULE).so
+LOCAL_MODULE_SUFFIX := .so
+include \$(BUILD_PREBUILT)
+
 endif
 
 EOF
